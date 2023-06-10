@@ -1,4 +1,10 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  ViewChild,
+  HostBinding,
+  HostListener,
+} from '@angular/core';
 import { BeinexService } from '../beinex.service';
 import Chart from 'chart.js/auto';
 
@@ -12,6 +18,16 @@ export class OverviewCardComponent {
   pageViewGraphlabels: any = [];
   pageViewGraphdata: any = [];
   pageViews: any;
+  @HostBinding('class.vertical') isMobile = false;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.checkScreenSize();
+  }
+  checkScreenSize() {
+    const isMobile = window.matchMedia('(max-width: 950px)').matches;
+    this.isMobile = isMobile;
+  }
   @ViewChild('overviewChart') performanceChart!: ElementRef;
   constructor(private service: BeinexService) {
     this.service.getPageViews().subscribe((data) => {

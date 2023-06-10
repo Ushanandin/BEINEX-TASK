@@ -4,10 +4,16 @@
       <h6>Performance</h6>
     </div>
     <div class="mat-title-flex graph-menu">
-      <span class="active" (click)="onPageViewCick($event)"
+      <span
+        [ngClass]="{ active: this.activeMenu === 0 }"
+        (click)="onPageViewCick($event)"
         ><h6>Pageviews</h6></span
       >
-      <span (click)="onClicksMenuClick($event)"><h6>Clicks</h6></span>
+      <span
+        [ngClass]="{ active: this.activeMenu === 1 }"
+        (click)="onClicksMenuClick($event)"
+        ><h6>Clicks</h6></span
+      >
       <span><h6>Conversations</h6></span>
       <span><h6>Commision</h6></span>
     </div>
@@ -18,7 +24,7 @@
       <canvas
         #performanceChart
         id="performanceChart"
-        style="width: 100vmin; height: 80vmin"
+        style="width: 80vmin; height: 80vmin"
         >{{ chart }}</canvas
       >
     </div>

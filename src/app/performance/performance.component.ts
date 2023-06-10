@@ -8,6 +8,7 @@ import Chart from 'chart.js/auto';
   styleUrls: ['./performance.component.css'],
 })
 export class PerformanceComponent implements AfterViewInit {
+  activeMenu: number = 0;
   pageViews: any;
   clicksData: any;
   chart: any;
@@ -35,9 +36,11 @@ export class PerformanceComponent implements AfterViewInit {
     });
   }
   onPageViewCick(e: Event) {
+    this.activeMenu = 0;
     this.createPageViewChart();
   }
   onClicksMenuClick(e: Event) {
+    this.activeMenu = 1;
     this.createClicksViewChart();
   }
   createPageViewChart() {
@@ -111,7 +114,7 @@ export class PerformanceComponent implements AfterViewInit {
           },
           elements: {
             line: {
-              borderColor: '#6ca9ea',
+              borderColor: '#f89f9f',
               borderWidth: 2,
               fill: true,
             },

@@ -1,0 +1,40 @@
+.main-panel {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  margin-left: 21px;
+}
+.performance-card {
+  width: 100%;
+  height: auto;
+  padding-left: 0em;
+  padding-right: 1em;
+}
+.network-card {
+  width: 55%;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 3em;
+}
+.content {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+@media screen and (max-width: 1200px) {
+  .main-panel {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .network-card {
+    width: 100%;
+    padding-left: 0em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .network-card {
+    padding-left: 0em;
+  }
+  .performance-card {
+    padding-left: 0em;
+  }
+}

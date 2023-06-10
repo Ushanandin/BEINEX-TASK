@@ -15,9 +15,10 @@
 }
 .chart-container {
   margin-top: 1em;
+  height: 45vh;
 }
 .graph-menu :hover {
-  color: rgb(103, 40, 231);
+  color: rgb(23, 114, 233);
   cursor: pointer;
   font-weight: 700;
 }

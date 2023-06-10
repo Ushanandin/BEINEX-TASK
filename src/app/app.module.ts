@@ -18,12 +18,14 @@ import { PerformanceComponent } from './performance/performance.component';
 import { NetworksComponent } from './networks/networks.component';
 import { MatTableModule } from '@angular/material/table';
 import { BeinexService } from './beinex.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
     NetworksComponent,
     OverviewCardComponent,
     PerformanceComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

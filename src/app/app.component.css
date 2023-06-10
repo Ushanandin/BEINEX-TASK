@@ -28,10 +28,7 @@
 .toolbar h4 {
   margin: 0;
 }
-.content {
-  flex: 1 1 auto;
-  overflow: auto;
-}
+
 .menu-icon {
   border: none;
   background-color: transparent;
@@ -82,22 +79,7 @@ mat-form-field {
   right: 21px;
   top: 1px;
 }
-.main-panel {
-  display: flex;
-  flex-direction: row;
-  margin-top: 24px;
-  margin-left: 21px;
-}
-.performance-card {
-  width: 100%;
-  height: auto;
-}
-.network-card {
-  width: 55%;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 3em;
-}
+
 ::ng-deep
   .mat-mdc-text-field-wrapper.mdc-text-field--outlined
   .mat-mdc-form-field-infix {
@@ -105,10 +87,4 @@ mat-form-field {
 }
 ::ng-deep .mat-mdc-select-value {
   margin-left: 3em !important;
-}
-@media screen and (max-width: 950px) {
-  .main-panel {
-    flex-direction: column;
-    gap: 2em;
-  }
 }
