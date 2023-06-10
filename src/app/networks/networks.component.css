@@ -1,0 +1,28 @@
+th {
+  font-size: 0.7rem;
+  color: #b8b7b2;
+}
+td {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.btn-connect {
+  background-color: transparent;
+  border: 1px solid #dad7d7;
+  border-radius: 14%;
+  font-size: 0.7rem;
+}
+::ng-deep .mat-mdc-table .mdc-data-table__header-row {
+  height: 32px !important;
+}
+::ng-deep .mat-mdc-card-header {
+  padding: 18px 23px 8px !important;
+}
+.statusempty td {
+  color: rgb(171, 169, 169);
+}
+@media screen and (max-width: 950px) {
+  .network-mat-card {
+    width: 31.25em;
+  }
+}

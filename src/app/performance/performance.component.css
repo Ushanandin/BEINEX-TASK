@@ -1,0 +1,29 @@
+.mat-title-flex {
+  display: inline-flex;
+  gap: 1em;
+}
+.mat-title-container {
+  padding: 0.8em;
+}
+.mat-title-container h6 {
+  padding-top: 0.4em;
+}
+.mat-title-flex h6 {
+  font-size: 0.8rem;
+  padding-top: 0.6em;
+  color: darkgray;
+}
+.chart-container {
+  margin-top: 1em;
+}
+.graph-menu :hover {
+  color: rgb(103, 40, 231);
+  cursor: pointer;
+  font-weight: 700;
+}
+.graph-menu .active h6 {
+  color: black !important;
+}
+#performanceChart {
+  width: "100%";
+}

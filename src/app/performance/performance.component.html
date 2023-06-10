@@ -1,0 +1,26 @@
+<mat-card>
+  <div class="d-flex justify-content-between mat-title-container">
+    <div>
+      <h6>Performance</h6>
+    </div>
+    <div class="mat-title-flex graph-menu">
+      <span class="active" (click)="onPageViewCick($event)"
+        ><h6>Pageviews</h6></span
+      >
+      <span (click)="onClicksMenuClick($event)"><h6>Clicks</h6></span>
+      <span><h6>Conversations</h6></span>
+      <span><h6>Commision</h6></span>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <div class="chart-container">
+      <canvas
+        #performanceChart
+        id="performanceChart"
+        style="width: 100vmin; height: 80vmin"
+        >{{ chart }}</canvas
+      >
+    </div>
+  </mat-card-content>
+</mat-card>

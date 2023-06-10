@@ -1,0 +1,50 @@
+<mat-card class="card-view-alignment">
+  <div class="heading-wrapper">
+    <div>
+      <h6>Pageviews</h6>
+      <div class="d-flex justify-content-between">
+        <div><p class="graph-values">540.280</p></div>
+        <div>
+          <canvas #overviewChart id="overviewChart" width="170%" height="70%">{{
+            chart
+          }}</canvas>
+        </div>
+      </div>
+      <div class="mat-subcontent">
+        <span class="trending-up"><mat-icon>trending_up</mat-icon></span>
+        <span class="trending-up">2,15%</span><span>Epc:</span
+        ><span>308.20USD</span>
+      </div>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div>
+      <h6>Clicks</h6>
+      <p class="graph-values">70.210</p>
+      <div class="mat-subcontent">
+        <span class="trending-down"><mat-icon>trending_down</mat-icon></span
+        ><span class="trending-down">1,10%</span><span>Ctr:</span
+        ><span>24.5%</span>
+      </div>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div>
+      <h6>Conversations</h6>
+      <p class="graph-values">42.340</p>
+      <div class="mat-subcontent">
+        <span class="trending-up"><mat-icon>trending_up</mat-icon></span>
+        <span class="trending-up">2,15%</span><span>Ctr:</span
+        ><span>28.6%</span>
+      </div>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div>
+      <h6>Comission</h6>
+      <p class="graph-values">0,24%</p>
+      <div class="mat-subcontent">
+        <span class="trending-up"><mat-icon>trending_up</mat-icon></span>
+        <span class="trending-up">2,15%</span><span>Epc:</span
+        ><span>14 USD</span>
+      </div>
+    </div>
+  </div>
+</mat-card>

@@ -1,0 +1,114 @@
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+}
+
+.sidenav {
+  flex: 0 0 auto;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+}
+.logo-align {
+  margin-top: 4px;
+  margin-bottom: 26px;
+  padding-left: 28px;
+  position: relative;
+}
+.toolbar {
+  width: 100%;
+  background-color: #ffff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.toolbar h4 {
+  margin: 0;
+}
+.content {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+.menu-icon {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  padding-right: 21px;
+}
+.mail-icon {
+  background-color: #ffff;
+  border-radius: 12%;
+  border-radius: 20%;
+  border-width: thin;
+  border-color: #64676b8f;
+  position: absolute;
+  right: 210px;
+  bottom: 10px;
+}
+.calender-icon {
+  position: absolute;
+  right: 9px;
+  top: 18px;
+}
+mat-form-field {
+  width: 190px;
+}
+::ng-deep .mdc-notched-outline {
+  height: 56% !important;
+}
+.align-expansion-list {
+  margin-left: 19px;
+}
+::ng-deep .sidenav {
+  width: 250px !important;
+}
+.mat-icon-align {
+  margin-top: 1px;
+}
+.mat-content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.close-icon {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  right: 21px;
+  top: 1px;
+}
+.main-panel {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  margin-left: 21px;
+}
+.performance-card {
+  width: 100%;
+  height: auto;
+}
+.network-card {
+  width: 55%;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 3em;
+}
+::ng-deep
+  .mat-mdc-text-field-wrapper.mdc-text-field--outlined
+  .mat-mdc-form-field-infix {
+  padding: 0 !important;
+}
+::ng-deep .mat-mdc-select-value {
+  margin-left: 3em !important;
+}
+@media screen and (max-width: 950px) {
+  .main-panel {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
